@@ -31,7 +31,7 @@ def main():
     start_year = 2016
     end_year = 2023
     selected_years = st.slider("Select Seasons", start_year, end_year, (start_year, end_year))
-    min_balls = st.number_input("Minimum Balls", min_value=20, step=10, value=20)
+    min_balls = st.number_input("Minimum Balls(Recommended 40)", min_value=20, step=10, value=40)
     min_avg = st.slider("Minimum Average", min_value=0, max_value=50, value=20)
     min_str = st.slider("Minimum Strikerate Y", min_value=100, max_value=200, value=130)
 

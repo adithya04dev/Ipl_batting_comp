@@ -48,7 +48,7 @@ def main():
     
     if st.button('Submit'):
         
-        st.write("Note:Players with infinite average(0 outs) arent plotted on graph")
+        st.write(" Note Players with infinite average(0 outs) arent plotted on graph")
         #st.write("Selected Player Name:", player_name)
         #st.write("Selected Bowling Type:", type(bowling_type[0]))  # Corrected indentation
         #st.write("Selected Phases:", len(phases))          

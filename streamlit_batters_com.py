@@ -60,15 +60,15 @@ def main():
         
         # Create the scatter plot
         plt.figure(figsize=(10, 6))
-        scatter_plot = sns.scatterplot(x='average_runs', y='strike_rate', data=result1)
+        scatter_plot = sns.scatterplot(y='average_runs', x='strike_rate', data=result1)
         
         # Annotate the points with player names
         for i, row in result1.iterrows():
             scatter_plot.text(row['average_runs'], row['strike_rate'], row['player_name'], fontsize=8, alpha=0.7)
         
-        plt.title('Scatter Plot of Average Runs vs Strike Rate')
-        plt.xlabel('Average Runs')
-        plt.ylabel('Strike Rate')
+        plt.title('Scatter Plot ')
+        plt.xlabel('Strike Rate')
+        plt.ylabel('Average Runs')
        
         
         st.pyplot(plt)

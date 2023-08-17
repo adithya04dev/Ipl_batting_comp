@@ -60,12 +60,12 @@ def main():
         sns.set(style="white")
         
         # Create the scatter plot
-        plt.figure(figsize=(10, 6))
+        plt.figure(figsize=(25, 15))
         scatter_plot = sns.scatterplot(y='average_runs', x='strike_rate', data=result1)
         
         # Annotate the points with player names
         for i, row in result1.iterrows():
-            scatter_plot.text(row['strike_rate'],row['average_runs'], row['player_name'], fontsize=8, alpha=0.7)
+            scatter_plot.text(row['strike_rate'],row['average_runs'], row['player_name'], fontsize=18, alpha=0.7)
         
         plt.title('Scatter Plot ')
         plt.xlabel('Strike Rate')
